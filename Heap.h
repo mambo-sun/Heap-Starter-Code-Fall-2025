@@ -7,7 +7,7 @@ template<class T>
 class Heap {
 public:
     Heap();
-    explicit Heap(int max_size);
+    explicit Heap(int max_size);    // Explicit: purpose is to set the max size, telling computer to NOT do conversions
 
     void ReheapUp(T value);  // adding stuff
     T ReheapDown();        // remove the root

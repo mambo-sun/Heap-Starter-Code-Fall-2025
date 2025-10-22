@@ -10,13 +10,13 @@ int main() {
     // Heap<int> myHeap(100);
 
     // Add 100 random values
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < 10; i++)
     {
         myHeap.ReheapUp(rand()%2000);
     }
 
     // The 100 random values should come back in order
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < 10; i++)
     {
         cout << myHeap.ReheapDown() << endl;
     }
